@@ -8,31 +8,31 @@
 </head>
 <body>
 <%
-int m = Integer.parseInt(request.getParameter("marks"));
+int m = Integer.parseInt(request.getParameter("age"));
 %>
 <h3> Your Grade is : </h3>
 <br>
 <% 
 switch(m){
-	case 10	: 	out.println("S");
+	case 18	:
+	case 17	: 	
+	case 16	: 	
+	case 15	: 	
+	case 14	:  	out.println("Guitar, Drums,Keyboard");
+				break;	
+	case 13	: 
+	case 12	: 	
+	case 10	: 	
+	case 9	: 	
+	case 8	: out.println("Carnatic and Hindustani Vocals");
 				break;
-	case 9	: 	out.println("A");
-				break;
-	case 8	: 	out.println("B");
-				break;
-	case 7	: 	out.println("C");
-				break;
-	case 6	: 	out.println("D");
-				break;
-	case 5	: 
-	case 4	: 	out.println("E");
-				break;
-	case 3	: 	
-	case 2	: 	
-	case 1	: 	
-	case 0	: 	out.println("F");
-				break;
-	default	:	out.println("Invailid Marks !!");
+	
+	case 7	:	
+	case 6	: 
+	case 5	: 	
+	case 4	:
+	case 3	:  out.println("Clay art, Dance for kids")
+	default	:	out.println("Age Invalid "");
 } 
 %>
 </body>
